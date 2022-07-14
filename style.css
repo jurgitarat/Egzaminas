@@ -1,0 +1,109 @@
+body {
+    
+    font-family: Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.hero div , header {
+    padding: 32px;
+}
+header nav {
+    display: none;
+}
+header img {
+    align-self: center;
+}
+h5 {
+    color: #FF3998;
+    margin-top: 16px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+main {
+}
+.hero h1 {
+    font-style:normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 58px;
+    color: #111111;
+}
+.hero p {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+/* Dark 2 */
+
+color: #555555;
+
+}
+.hero button {
+      background-image: url("assets/button.png");
+      background-color: white;
+      border: none;
+      width: 188px;
+      height: 75px;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 30px */
+
+text-align: center;
+
+/* Dark 1 */
+
+color: #111111;
+
+}
+.hero div {
+    width: 275px;
+}
+main {
+    background-image: url("assets/graphiccut.png");
+    background-position: right top;
+    /* background-size: auto 100%; */
+    
+background-repeat: no-repeat;
+}
+#upsell {
+    background-image: url("assets/background.png");
+    padding: 122px 32px 32px 32px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+            }
+#upsell h2 {
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: flex-end;
+
+/* Dark 1 */
+
+color: #111111;
+
+}
+#upsell p {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+/* Dark 1 */
+
+color: #111111;
+}
