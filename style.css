@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.hero div , header, .press, .showcase {
+.hero  , header, .press, .showcase {
     padding: 32px;
 }
 header nav {
@@ -233,4 +233,10 @@ color: #777777;
     text-align: right;
     padding-right: 24px;
 
+   }
+   .hero img{
+    float:right;
+   }
+   .hero {
+    width:100vw;
    }
