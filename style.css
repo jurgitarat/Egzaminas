@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.hero div , header, .press {
+.hero div , header, .press, .showcase {
     padding: 32px;
 }
 header nav {
@@ -132,3 +132,105 @@ color: #111111;
     grid-area: opendoor;
     display: none;
 }
+.showcase h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+        
+    /* Dark 1 */
+    
+    color: #111111; 
+}
+.showcase p {
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+/* Dark 2 */
+
+color: #555555;
+}
+.showcase p a {
+    color: #555555;
+   }
+   .scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+   }
+   .scroll div {
+    padding-right: 40px;
+   }
+   .scroll div table {
+    background-color: #EEEEEE;
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+   }
+   table {
+    width: 100%;
+   }
+   th:first-child {
+    text-transform: uppercase;
+    color: #FF8039;
+    font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+text-align: left;
+padding-left: 24px;
+   }
+   th:last-child {
+    font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+/* identical to box height, or 12px */
+
+text-transform: uppercase;
+
+/* Dark 3 */
+
+color: #777777;
+text-align: right;
+padding-right: 24px;
+
+   }
+   tr:nth-child(2){
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+
+/* Dark 1 */
+
+color: #111111;
+
+   }
+   tr:last-child {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+
+/* Dark 3 */
+
+color: #777777;
+
+   }
+   td:first-child {
+    text-align: left;
+    padding-left: 24px;
+   }
+   td:last-child{
+    text-align: right;
+    padding-right: 24px;
+
+   }
