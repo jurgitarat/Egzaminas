@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.hero div , header {
+.hero div , header, .press {
     padding: 32px;
 }
 header nav {
@@ -25,8 +25,7 @@ line-height: 19px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 }
-main {
-}
+
 .hero h1 {
     font-style:normal;
     font-weight: 900;
@@ -106,4 +105,30 @@ line-height: 150%;
 /* Dark 1 */
 
 color: #111111;
+}
+.press {
+    display: grid;
+    grid-template-areas:"boom blimp"
+    "qrco droplet";
+    grid-template-columns: 138px 138px;
+    grid-template-rows: auto;
+    gap: 32px;
+}
+.boom {
+    grid-area: boom;
+    overflow: hidden;
+}
+.blimp {
+    grid-area: blimp;
+}
+.qrco {
+    grid-area: qrco; 
+}
+.droplet {
+    grid-area: droplet;
+    
+}
+.opendoor {
+    grid-area: opendoor;
+    display: none;
 }
