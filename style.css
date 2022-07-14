@@ -1,15 +1,26 @@
 body {
     font-family: Helvetica, sans-serif;
 }
+
+
 header {
     display: flex;
     justify-content: space-between;
 }
-.hero , header, .press, .showcase, footer {
-    padding: 32px;
+header nav a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+    text-decoration: none;
+    padding-right: 28px;
+    /* Dark 2 */
+    
+    color: #555555;
 }
-header nav {
-    display: none;
+header nav a:last-child{
+    color: #FF3998;
 }
 header img {
     align-self: center;
@@ -90,16 +101,9 @@ main {
    /* Dark 1 */
     color: #111111;
 }
-.press {
-    display: grid;
-    grid-template-areas:"boom blimp" "qrco droplet";
-    grid-template-columns: 138px 138px;
-    grid-template-rows: auto;
-    gap: 32px;
-}
+
 .boom {
     grid-area: boom;
-    overflow: hidden;
 }
 .blimp {
     grid-area: blimp;
@@ -112,7 +116,6 @@ main {
 }
 .opendoor {
     grid-area: opendoor;
-    display: none;
 }
 .showcase h1 {
     font-style: normal;
@@ -236,13 +239,7 @@ li {
 ul {
     list-style: none;
 }
-footer div{
-    display: grid;
-    grid-template-areas:"first second" "third fourth";
-    grid-template-columns: 138px 138px;
-    grid-template-rows: auto;
-    gap: 32px;
-}
+
 ul:first-child{
     grid-area: first;
 }
@@ -270,4 +267,62 @@ color: #999999;
 }
 footer p:last-child{
     display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+header nav {
+    display: none;
+}
+.hero , header, .press, .showcase, footer {
+    padding: 32px;
+}
+.press {
+    display: grid;
+    grid-template-areas:"boom blimp" "qrco droplet";
+    grid-template-columns: 138px 138px;
+    grid-template-rows: auto;
+    gap: 32px;
+}
+
+.opendoor {
+    display: none;
+}
+
+.boom {
+    overflow: hidden;
+}
+footer div{
+    display: grid;
+    grid-template-areas:"first second" "third fourth";
+    grid-template-columns: 138px 138px;
+    grid-template-rows: auto;
+    gap: 32px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    header img:nth-child(2) {
+        display:none;
+    }    
+    .hero , header, .upsell, .press, .showcase, footer {
+        padding: 80px;
+    }
+    .press {
+        display: grid;
+        grid-template-areas:"boom blimp qrco droplet opendoor";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 32px;
+    }
+    footer div{
+        display: grid;
+        grid-template-areas:"first second third fourth";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 32px;
+    }
 }
