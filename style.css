@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-header nav a, .hero p,.showcase p,footer p, li {
+header nav a, .hero p, .footer-upsell p,.showcase p,footer p, li {
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
@@ -17,7 +17,7 @@ header nav a {
     padding-right: 28px;
     line-height: 100%;
 }
-.hero p , .showcase p{
+.hero p , .showcase p , .footer-upsell p{
     line-height: 150%;
 }
 header nav a:last-child{
@@ -38,12 +38,8 @@ h5 {
     margin-top: 16px;
 }
 
-.hero h1 {
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 58px;
-}
-.hero button {
+
+.hero button , .footer-upsell button{
     background-image: url("assets/button.png");
     background-color: white;
     border: none;
@@ -54,20 +50,12 @@ h5 {
     line-height: 150%;
     text-align: center;
 }
-.hero div {
-    width: 258px;
-}
-main {
+/* main {
     background-image: url("assets/graphiccut.png");
     background-position: right top;
     background-repeat: no-repeat;
-}
-.upsell {
-    background-image: url("assets/background.png");
-    padding: 122px 32px 32px 32px;
-    background-size: 100% 100%;
-    background-repeat:no-repeat;
-}
+} */
+
 h2 {
     font-weight: 500;
     font-size: 40px;
@@ -104,11 +92,16 @@ h2 {
 .scroll div {
     padding-right: 40px;
 }
+.scroll div:last-child{
+    padding-right: 0px;
+}
 table {
     width: 100%;
     background-color: #EEEEEE;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 th{
     text-transform: uppercase;
@@ -142,11 +135,8 @@ td:last-child{
     text-align: right;
     padding-right: 24px;
 }
-.hero img{
+.hero img , .footer-upsell img{
     float:right;
-}
-.hero {
-    width:100vw;
 }
 li {
     padding-bottom: 20px;
@@ -176,6 +166,39 @@ footer p{
     color: #999999;
 }
 @media only screen and (max-width: 768px) {
+    .wrapper {
+        display: block;
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .upsell {
+        background-image: url("assets/background.png");
+        padding: 122px 32px 32px 32px;
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+    }
+    .hero h1 , .footer-upsell h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 58px;
+}
+.full {
+    display:none;
+}
+.hero , .footer-upsell {
+    width:60vw;
+}
+.half {
+    position:absolute;
+    right:0;
+    z-index: -1;
+}
+.hero img {
+    position:absolute;
+    right:-10px;
+    z-index: -1;
+}
     header nav {
         display: none;
    }
@@ -210,15 +233,61 @@ footer p{
    }
 }
 @media only screen and (min-width: 768px) {
+    .wrapper {
+        display: block;
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .upsell {
+        background-image: url("assets/background.svg");
+        padding-top:154px;
+        padding-bottom:64px;
+        padding-left:64px;
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+    }
+    .half {
+        display: none;
+    }
     header img:nth-child(2) {
         display:none;
    }
-    .hero , header, .upsell, .press, .showcase, footer {
-        padding: 80px;
+     header,  .press, .showcase, footer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+   }
+    .hero h5 {
+    padding-top: 80px;
+    }
+   .hero h1{
+    font-weight: 900;
+font-size: 90px;
+line-height: 116px;
+   }   
+   .footer-upsell h1{
+    font-weight: 900;
+font-size: 56px;
+line-height: 116px;
+
+   }
+   .footer-upsell img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .hero , .footer-upsell {
+    width:55vw;
+}
+   .hero , .footer-upsell  {
+    padding-bottom: 80px;
+   }
+   .showcase p {
+    margin-bottom: 56px;
    }
     .press {
         display: grid;
-        grid-template-areas:"boom blimp qrco droplet opendoor";
+        grid-template-areas:"boom blimp qrco opendoor droplet";
         grid-template-columns: auto;
         grid-template-rows: auto;
         gap: 32px;
