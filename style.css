@@ -84,6 +84,13 @@ h2 {
 .showcase p a {
     color: #555555;
 }
+hr {
+    margin-top: 0px;
+    height: 2px;
+    background-color: #999999;
+    border: none;
+    
+}
 .scroll {
     display: flex;
     flex-wrap: nowrap;
@@ -221,7 +228,7 @@ footer p{
     .boom {
         overflow: hidden;
    }
-    footer div{
+    .links {
         display: grid;
         grid-template-areas:"first second" "third fourth";
         grid-template-columns: 138px 138px;
@@ -253,7 +260,7 @@ footer p{
     header img:nth-child(2) {
         display:none;
    }
-     header,  .press, .showcase, footer {
+     header,  .press, .showcase, footer, .links, .social {
         padding-top: 80px;
         padding-bottom: 80px;
    }
@@ -271,15 +278,12 @@ font-size: 56px;
 line-height: 116px;
 
    }
-   .footer-upsell img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .hero , .footer-upsell {
-    width:55vw;
+   .footer-upsell{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
 }
-   .hero , .footer-upsell  {
+   .hero  {
     padding-bottom: 80px;
    }
    .showcase p {
@@ -292,11 +296,34 @@ line-height: 116px;
         grid-template-rows: auto;
         gap: 32px;
    }
-    footer div{
+    .links {
         display: grid;
         grid-template-areas:"first second third fourth";
         grid-template-columns: auto;
         grid-template-rows: auto;
         gap: 32px;
+        width: 50%;
+       
    }
+   .copyright {
+    display: flex;
+    justify-content: space-between;
+   }
+   .social {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+   }
+   .signup-text {
+    width:50%;
+   }
+   .signup-image{
+    width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+
 }
+
