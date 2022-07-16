@@ -32,7 +32,6 @@ h5, li:first-child{
     line-height: 19px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
 }
 li:first-child{
     margin-bottom: 10px;
@@ -41,8 +40,6 @@ h5 {
     color: #FF3998;
     margin-top: 16px;
 }
-
-
 .hero button , .footer-upsell button{
     background-image: url("assets/button.png");
     background-color: white;
@@ -58,8 +55,8 @@ h5 {
     background-image: url("assets/graphiccut.png");
     background-position: right top;
     background-repeat: no-repeat;
-} */
-
+}
+*/
 h2 {
     font-weight: 500;
     font-size: 40px;
@@ -93,7 +90,6 @@ hr {
     height: 2px;
     background-color: #CCCCCC;
     border: none;
-    
 }
 .scroll {
     display: flex;
@@ -186,28 +182,28 @@ footer p{
         padding: 122px 32px 32px 32px;
         background-size: 100% 100%;
         background-repeat:no-repeat;
-    }
+   }
     .hero h1 , .footer-upsell h1{
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 58px;
-}
-.full {
-    display:none;
-}
-.hero , .footer-upsell {
-    width:60vw;
-}
-.half {
-    position:absolute;
-    right:0;
-    z-index: -1;
-}
-.hero img {
-    position:absolute;
-    right:-10px;
-    z-index: -1;
-}
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 58px;
+   }
+    .full {
+        display:none;
+   }
+    .hero , .footer-upsell {
+        width:60vw;
+   }
+    .half {
+        position:absolute;
+        right:0;
+        z-index: -1;
+   }
+    .hero img {
+        position:absolute;
+        right:-10px;
+        z-index: -1;
+   }
     header nav {
         display: none;
    }
@@ -240,22 +236,21 @@ footer p{
     footer p:last-child{
         display: none;
    }
-   .signup-text {
-    width: 75%;
-    padding-bottom: 22px;
+    .signup-text {
+        width: 75%;
+        padding-bottom: 22px;
    }
-   .signup-image {
-    position: absolute;
-    right:-15px;
-    display: block;
-    padding-top: 60px;
-
+    .signup-image {
+        position: absolute;
+        right:-15px;
+        display: block;
+        padding-top: 60px;
    }
-   .links, .footer-upsell{
-    padding-top:32px;
+    .links, .footer-upsell{
+        padding-top:32px;
    }
-   ul {
-    padding-left: 0px;
+    ul {
+        padding-left: 0px;
    }
 }
 @media only screen and (min-width: 768px) {
@@ -264,7 +259,7 @@ footer p{
         width: 1280px;
         margin-left: auto;
         margin-right: auto;
-    }
+   }
     .upsell {
         background-image: url("assets/background.svg");
         padding-top:154px;
@@ -272,42 +267,41 @@ footer p{
         padding-left:64px;
         background-size: 100% 100%;
         background-repeat:no-repeat;
-    }
+   }
     .half {
         display: none;
-    }
+   }
     header img:nth-child(2) {
         display:none;
    }
-     header,  .showcase, footer, .links, .social {
+    header, .showcase, footer, .links, .social {
         padding-top: 80px;
         padding-bottom: 80px;
    }
     .hero h5 , .press{
-    padding-top: 80px;
-    }
-   .hero h1{
-    font-weight: 900;
-font-size: 90px;
-line-height: 116px;
-   }   
-   .footer-upsell h1{
-    font-weight: 900;
-font-size: 56px;
-line-height: 116px;
-
+        padding-top: 80px;
    }
-   .footer-upsell{
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-}
-   .hero  {
-    padding-bottom: 80px;
+    .hero h1{
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 116px;
    }
-   .showcase p {
-    margin-bottom: 56px;
+    .footer-upsell h1{
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 116px;
+   }
+    .footer-upsell{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+   }
+    .hero {
+        padding-bottom: 80px;
+   }
+    .showcase p {
+        margin-bottom: 56px;
    }
     .press {
         display: grid;
@@ -323,27 +317,23 @@ line-height: 116px;
         grid-template-rows: auto;
         gap: 32px;
         width: 50%;
-       
    }
-   .copyright {
-    display: flex;
-    justify-content: space-between;
+    .copyright {
+        display: flex;
+        justify-content: space-between;
    }
-   .social {
-    float: left;
-    width: 50%;
-    margin-top: 25px;
+    .social {
+        float: left;
+        width: 50%;
+        margin-top: 25px;
    }
-   .signup-text {
-    width:50%;
+    .signup-text {
+        width:50%;
    }
-   .signup-image{
-    width:20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    .signup-image{
+        width:20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
    }
-
 }
-
