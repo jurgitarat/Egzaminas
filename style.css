@@ -32,6 +32,10 @@ h5, li:first-child{
     line-height: 19px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+}
+li:first-child{
+    margin-bottom: 10px;
 }
 h5 {
     color: #FF3998;
@@ -87,7 +91,7 @@ h2 {
 hr {
     margin-top: 0px;
     height: 2px;
-    background-color: #999999;
+    background-color: #CCCCCC;
     border: none;
     
 }
@@ -148,6 +152,10 @@ td:last-child{
 li {
     padding-bottom: 20px;
 }
+li a {
+    text-decoration: none;
+    color:#555555;
+}
 ul {
     list-style: none;
 }
@@ -173,12 +181,6 @@ footer p{
     color: #999999;
 }
 @media only screen and (max-width: 768px) {
-    .wrapper {
-        display: block;
-        width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .upsell {
         background-image: url("assets/background.png");
         padding: 122px 32px 32px 32px;
@@ -238,6 +240,23 @@ footer p{
     footer p:last-child{
         display: none;
    }
+   .signup-text {
+    width: 75%;
+    padding-bottom: 22px;
+   }
+   .signup-image {
+    position: absolute;
+    right:-15px;
+    display: block;
+    padding-top: 60px;
+
+   }
+   .links, .footer-upsell{
+    padding-top:32px;
+   }
+   ul {
+    padding-left: 0px;
+   }
 }
 @media only screen and (min-width: 768px) {
     .wrapper {
@@ -260,11 +279,11 @@ footer p{
     header img:nth-child(2) {
         display:none;
    }
-     header,  .press, .showcase, footer, .links, .social {
+     header,  .showcase, footer, .links, .social {
         padding-top: 80px;
         padding-bottom: 80px;
    }
-    .hero h5 {
+    .hero h5 , .press{
     padding-top: 80px;
     }
    .hero h1{
@@ -282,6 +301,7 @@ line-height: 116px;
     padding-top: 80px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
 }
    .hero  {
     padding-bottom: 80px;
